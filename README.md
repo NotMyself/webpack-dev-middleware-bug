@@ -4,7 +4,7 @@ This is a asp.net core application that uses the WebpackDevMiddleware to serve u
 
 There are two problems that have been identified with this setup:
 
-1. You must add the aspnet-webpack and webpack-hot-middleware as dev dependcies to the vue.js app. When run using the WebpackDevMiddleware, you will get an stackoverflow error on updates. This is caused by vue.js already having HMR loaded when the WebpackDevMiddleware injects it. Adding this [vue.config.js](.src/client/vue.config.js), resolves this first issue.
+1. You must add the aspnet-webpack and webpack-hot-middleware as dev dependcies to the vue.js app. When run using the WebpackDevMiddleware, you will get an stackoverflow error on updates. This is caused by vue.js already having HMR loaded when the WebpackDevMiddleware injects it. Adding this [vue.config.js](src/client/vue.config.js), resolves this first issue.
 2. Client side deep links throw a 404. It appears that the WebpackDevMiddleware will only serve up the SPA from the root directory. So the route `/` works but the route `/deep/link` does not. The middleware simply does not handle it and the server throws a 404.
 
 ## Getting Started
