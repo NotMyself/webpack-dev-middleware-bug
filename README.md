@@ -30,6 +30,12 @@ When running in Production, **Client Side Deep Link Page 2** will serve up the d
 
 ## Question?
 
+This issue was reported on the AspNetCore repository, but sadly it was closed and suggested that I ask on StackOverflow.
+
+- [Original App Issue](https://github.com/NotMyself/bivrost/issues/4)
+- [AspNetCore Issue](https://github.com/aspnet/AspNetCore/issues/10002)
+- [StackOverFlow Thread](https://stackoverflow.com/questions/56094371/client-side-deep-links-with-webpackdevmiddleware-404s)
+
 How do I get client side deep links to work with Webpack Dev Middleware enabled for local development?
 
 Is this a bug in the middleware or my configuration of it?
