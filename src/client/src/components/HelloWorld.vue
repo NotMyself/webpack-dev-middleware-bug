@@ -18,15 +18,15 @@
       <li>
         <em>
           <router-link :to="{name: 'DeepLink'}">
-            Client Side Deep Link Page
+            Client Side Deep Link Page 1
           </router-link>
         </em>
-         Uses client side routing to link to link to /deep/link
+         Uses client side routing to link to /deep/link
       </li>
       <li>
         <em>
           <a href="/deep/link" target="_blank">
-          Client Side Deep Link Page
+          Client Side Deep Link Page 2
           </a>
         </em>
          Uses traditional anchor tag to open /deep/link in a new tab.
