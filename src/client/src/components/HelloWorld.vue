@@ -7,10 +7,41 @@
     </p>
     <h3>Links</h3>
     <ul>
-      <li><router-link :to="{name: 'HelloWorld'}">Hello World Page</router-link></li>
-      <li><router-link :to="{name: 'DeepLink'}">Client Side Deep Link Page</router-link></li>
-      <li><a href="/deep/link" target="_blank">Client Side Deep Link Page</a></li>
-      <li><a href="/api/fallback/test">API Test</a></li>
+      <li>
+        <em>
+          <router-link :to="{name: 'HelloWorld'}">
+          Hello World Page
+          </router-link>
+          </em>
+          Uses client side routing to link back to the root route
+      </li>
+      <li>
+        <em>
+          <router-link :to="{name: 'DeepLink'}">
+            Client Side Deep Link Page
+          </router-link>
+        </em>
+         Uses client side routing to link to link to /deep/link
+      </li>
+      <li>
+        <em>
+          <a href="/deep/link" target="_blank">
+          Client Side Deep Link Page
+          </a>
+        </em>
+         Uses traditional anchor tag to open /deep/link in a new tab.
+         This fails when running in Development, but works when running
+          in Production.
+      </li>
+      <li>
+        <em>
+          <a href="/api/fallback/test">
+            API Test
+          </a>
+        </em>
+        Uses traditional anchor tag to open /api/fallback/test to show
+        that api routing works.
+      </li>
     </ul>
   </div>
 </template>
